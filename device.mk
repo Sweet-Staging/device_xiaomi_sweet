@@ -129,6 +129,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     $(LOCAL_PATH)/configs/perf/thermalboost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermalboost.conf
 
+PRODUCT_PACKAGES += \
+    libqti-perfd-client    
+
 # qdcm
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
@@ -137,9 +140,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
-# Perf
+# Power
 PRODUCT_PACKAGES += \
-    libqti-perfd-client
+    android.hardware.power-service.sweet-libperfmgr \
+    android.hardware.power@1.2.vendor
+
+# Properties
+include $(LOCAL_PATH)/properties.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \
