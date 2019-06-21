@@ -156,6 +156,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Don't build super.img.
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Enable Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Perf
