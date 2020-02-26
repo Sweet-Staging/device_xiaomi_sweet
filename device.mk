@@ -188,6 +188,10 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigResSweet \
