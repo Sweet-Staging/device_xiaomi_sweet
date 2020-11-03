@@ -273,7 +273,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# Wifi
+# vndservicemanager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
+# WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
