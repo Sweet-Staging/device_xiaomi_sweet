@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.sweet
+    android.hardware.lights-service.sweet
 
 # Media
 MEDIA_HAL_PATH := hardware/qcom-caf/sm8150/media
