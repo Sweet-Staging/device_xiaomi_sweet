@@ -192,7 +192,8 @@ include $(LOCAL_PATH)/properties.mk
 PRODUCT_PACKAGES += \
     CarrierConfigResSweet \
     FrameworksResSweet \
-    SystemUIResSweet
+    SystemUIResSweet \
+    TelephonyResSweet
 
 # Ramdisk
 PRODUCT_PACKAGES += \
