@@ -188,6 +188,11 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResSweet \
+    SystemUIResSweet
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
