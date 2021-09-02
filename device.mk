@@ -190,6 +190,7 @@ include $(LOCAL_PATH)/properties.mk
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigResSweet \
     FrameworksResSweet \
     SystemUIResSweet
 
