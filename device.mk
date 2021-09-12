@@ -276,11 +276,12 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 
-# Power
+# Power/perf
 PRODUCT_PACKAGES += \
     android.hardware.power-service.sweet-libperfmgr \
     android.hardware.power@1.2.vendor \
-    libqti-perfd-client 
+    libqti-perfd-client \
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
@@ -380,7 +381,7 @@ PRODUCT_PACKAGES += \
 # whitelisted app
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
-    
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
