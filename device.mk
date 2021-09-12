@@ -154,6 +154,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# IPACM
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
