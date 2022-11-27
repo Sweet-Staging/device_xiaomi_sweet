@@ -60,6 +60,22 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
+# GPS
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)configs/gps/apdr.config:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.config \
+    $(LOCAL_PATH)configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)configs/gps/gps.config:$(TARGET_COPY_OUT_VENDOR)/etc/gps.config \
+    $(LOCAL_PATH)configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)configs/gps/lowi.config:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.config \
+    $(LOCAL_PATH)configs/gps/sap.config:$(TARGET_COPY_OUT_VENDOR)/etc/sap.config \
+    $(LOCAL_PATH)configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
