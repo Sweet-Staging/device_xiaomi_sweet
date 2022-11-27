@@ -37,6 +37,7 @@ void set_variant_props(const variant_info_t variant) {
     property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint);
 
     property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
+    property_override("vendor.usb.product_string", variant.marketname);
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
