@@ -50,3 +50,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
+
+
+# Inherit the proprietary files
+include vendor/xiaomi/sweet/BoardConfigVendor.mk
