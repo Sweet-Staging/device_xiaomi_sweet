@@ -51,6 +51,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_METADATA_PARTITION := true
 
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := sm6150
 
 # Inherit the proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
