@@ -26,6 +26,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifests/compatibility_matrix.xml
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sm6150
