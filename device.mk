@@ -10,3 +10,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
